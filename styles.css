@@ -1,105 +1,98 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Soft background color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light background color */
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    display: flex; /* Use flexbox for layout */
-}
-
 header {
-    background: #007BFF; /* Header background color */
+    background-color: #007bff; /* Blue header */
     color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #333;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
 }
 
 .sidebar {
-    width: 25%;
-}
-
-.info-box {
-    margin-bottom: 20px;
+    width: 250px;
+    background-color: #ffffff; /* White background for sidebar */
+    border: 2px solid #007bff; /* Blue border */
     padding: 15px;
-    border: 2px solid #007BFF; /* Blue border for sections */
+    margin-right: 20px;
     border-radius: 5px;
-    background-color: #ffffff; /* White background for sections */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added animation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.info-box:hover {
-    background-color: #E7F1FF; /* Light blue hover effect */
-    transform: scale(1.02); /* Slight scaling effect on hover */
-}
-
-.sidebar.info-box {
-    background-color: #ffffff; /* Match sidebar background color */
-    border: 2px solid #007BFF; /* Add border to sidebar */
+.sidebar h2 {
+    margin-bottom: 10px;
 }
 
 .sidebar ul {
     list-style-type: none;
-    padding: 0;
 }
 
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar a {
+.sidebar ul li a {
     text-decoration: none;
-    color: #333;
+    color: #007bff; /* Blue link color */
+    transition: color 0.3s;
 }
 
-.sidebar a:hover {
-    text-decoration: underline;
-    color: #007BFF; /* Blue link on hover */
+.sidebar ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
 }
 
 main {
-    width: 75%;
-    padding: 20px;
+    flex: 1;
+    background-color: #ffffff; /* White background for main content */
+    border: 2px solid #007bff; /* Blue border */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 h2 {
-    color: #007BFF; /* Heading color */
+    border-bottom: 2px solid #007bff; /* Blue underline for section headers */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background-color: #007bff; /* Blue footer */
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 5px solid #007BFF; /* Blue border on footer */
 }
 
-footer a {
-    color: #007BFF; /* Blue link color */
+ul {
+    padding-left: 20px;
 }
 
-.resources ul {
-    list-style-type: none;
-    padding: 0;
+ul li {
+    margin-bottom: 10px;
 }
 
-.resources ul li {
-    margin: 10px 0;
+/* Animation for the sidebar and main section */
+.sidebar, main {
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.resources a {
-    text-decoration: none;
-    color: #007BFF; /* Blue link color */
-}
-
-.resources a:hover {
-    text-decoration: underline;
+.sidebar:hover, main:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
