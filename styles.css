@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+header {
+    background: #2c2c2c;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.facts-section, .guides-section, .hardware-section, .resources-section, .community-section {
+    padding: 20px;
+    border: 1px solid #444;
+    margin: 20px;
+    background: #333;
+}
+
+.fact {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0dbf60;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c2c2c;
+}
