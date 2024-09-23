@@ -22,10 +22,25 @@ header {
 
 .sidebar {
     width: 25%;
-    background: #e7e7e7;
-    padding: 20px;
-    border-right: 2px solid #007BFF; /* Blue border for sidebar */
-    border-radius: 5px; /* Rounded corners for sidebar */
+}
+
+.info-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #007BFF; /* Blue border for sections */
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for sections */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added animation */
+}
+
+.info-box:hover {
+    background-color: #E7F1FF; /* Light blue hover effect */
+    transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+.sidebar.info-box {
+    background-color: #ffffff; /* Match sidebar background color */
+    border: 2px solid #007BFF; /* Add border to sidebar */
 }
 
 .sidebar ul {
@@ -50,20 +65,6 @@ header {
 main {
     width: 75%;
     padding: 20px;
-}
-
-.info-box {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 2px solid #007BFF; /* Blue border for sections */
-    border-radius: 5px;
-    background-color: #ffffff; /* White background for sections */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Added animation */
-}
-
-.info-box:hover {
-    background-color: #E7F1FF; /* Light blue hover effect */
-    transform: scale(1.02); /* Slight scaling effect on hover */
 }
 
 h2 {
