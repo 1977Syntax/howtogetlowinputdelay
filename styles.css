@@ -5,17 +5,17 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #0d47a1, #1c54b2, #42a5f5);
     background-size: cover;
-    color: #E1F5FE; /* Light blue for better contrast with the dark background */
+    color: #000000; /* Black text for strong contrast */
 }
 
 /* Header */
 header {
     background-color: rgba(21, 101, 192, 0.85);
-    color: #E3F2FD; /* Soft white-blue */
+    color: #000000; /* Black header text */
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #4CAF50;
-    box-shadow: 0px 0px 15px rgba(76, 175, 80, 0.8);
+    border-bottom: 3px solid #000000; /* Black border */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8); /* Black shadow */
 }
 
 /* Navigation */
@@ -31,14 +31,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFFFFF; /* White links for contrast */
+    color: #000000; /* Black links for contrast */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #4CAF50; /* Green hover effect to make the links stand out */
+    color: #4CAF50; /* Green hover effect to stand out */
 }
 
 /* Main Content Styling */
@@ -50,14 +50,14 @@ main {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-    color: #E1F5FE; /* Light blue for readability */
+    color: #000000; /* Black text for readability */
 }
 
 section {
     margin-bottom: 30px;
     padding: 15px;
     border-radius: 12px;
-    border: 3px solid rgba(76, 175, 80, 0.8);
+    border: 3px solid #000000; /* Black border for sections */
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -65,13 +65,13 @@ section {
 
 section:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(76, 175, 80, 0.6);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Black shadow on hover */
 }
 
 /* Heading Styles */
 h2 {
-    color: #4CAF50;
-    text-shadow: 0px 0px 10px rgba(76, 175, 80, 1);
+    color: #000000; /* Black headings */
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Black shadow for pop */
 }
 
 /* Footer */
@@ -79,23 +79,23 @@ footer {
     text-align: center;
     padding: 10px 0;
     background-color: rgba(21, 101, 192, 0.85);
-    color: #E1F5FE; /* Light blue to maintain consistency */
+    color: #000000; /* Black footer text */
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 3px solid #4CAF50;
+    border-top: 3px solid #000000; /* Black border */
 }
 
 /* Links */
 a {
-    color: #4CAF50; /* Fortnite-themed green for emphasis */
+    color: #000000; /* Black links */
     text-decoration: none;
     font-weight: bold;
     transition: text-shadow 0.3s ease;
 }
 
 a:hover {
-    text-shadow: 0px 0px 5px #4CAF50;
+    text-shadow: 0px 0px 5px #4CAF50; /* Green shadow on hover */
 }
 
 /* Responsive Design */
