@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #1e1e2f;
+    background: #121212;
     color: #ffffff;
 }
 
@@ -14,7 +18,7 @@ body {
 }
 
 .hero {
-    background-image: url('fortnite-background.jpg'); /* Replace with a Fortnite-themed image */
+    background-image: url('fortnite-background.jpg'); /* Replace with an appropriate Fortnite-themed image */
     background-size: cover;
     padding: 100px 0;
     text-align: center;
@@ -49,6 +53,11 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
 }
 
 .hero-content {
@@ -72,13 +81,14 @@ body {
 
 .key-facts, .tips-techniques, .resources {
     padding: 60px 0;
-    background: #2a2a3b;
+    background: #1e1e2f;
     text-align: center;
 }
 
 h2 {
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
+    color: #ffcc00;
 }
 
 .facts-grid, .tips-grid {
@@ -88,7 +98,7 @@ h2 {
 }
 
 .fact-item, .tip-item {
-    background: #3a3a4b;
+    background: #2a2a3b;
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s;
@@ -118,7 +128,7 @@ h2 {
 }
 
 footer {
-    background: #3a3a4b;
+    background: #2a2a3b;
     padding: 20px 0;
     text-align: center;
 }
