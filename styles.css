@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #4CAF50;
+    background: #007BFF; /* Header background color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -27,7 +27,7 @@ header {
     width: 25%;
     background: #e7e7e7;
     padding: 20px;
-    border-right: 2px solid #4CAF50;
+    border-right: 2px solid #007BFF; /* Blue border for sidebar */
 }
 
 .sidebar ul {
@@ -46,7 +46,7 @@ header {
 
 .sidebar a:hover {
     text-decoration: underline;
-    color: #4CAF50;
+    color: #007BFF; /* Blue link on hover */
 }
 
 main {
@@ -57,25 +57,25 @@ main {
 section {
     margin-bottom: 20px;
     padding: 15px;
-    border: 2px solid #4CAF50;
+    border: 2px solid #007BFF; /* Blue border for sections */
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background for sections */
     transition: background-color 0.3s ease;
 }
 
 section:hover {
-    background-color: #f1f1f1; /* Light hover effect */
+    background-color: #E7F1FF; /* Light blue hover effect */
 }
 
 h2 {
-    color: #4CAF50;
+    color: #007BFF; /* Heading color */
 }
 
 .fact {
     margin-bottom: 10px;
     padding: 10px;
     border: 2px solid #007BFF; /* Blue border for facts */
-    background-color: #E7F1FF; /* Light blue background for facts */
+    background-color: #ffffff; /* White background for facts */
     border-radius: 5px;
 }
 
@@ -87,9 +87,9 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    border-top: 5px solid #4CAF50;
+    border-top: 5px solid #007BFF; /* Blue border on footer */
 }
 
 footer a {
-    color: #4CAF50;
+    color: #007BFF; /* Blue link color */
 }
