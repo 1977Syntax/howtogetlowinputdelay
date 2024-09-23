@@ -1,9 +1,14 @@
-// Smooth scroll effect for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+// Add smooth scrolling to navigation links
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('nav ul li a');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();  // Prevent default anchor behavior
+            const targetId = link.getAttribute('href');  // Get target section ID
+            const targetSection = document.querySelector(targetId);  // Select target section
+            
+            // Scroll to the target section smoothly
+            targetSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
