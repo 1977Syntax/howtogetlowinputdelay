@@ -3,15 +3,15 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #0d47a1, #1c54b2, #42a5f5);
     background-size: cover;
-    color: #ffffff;
+    color: #E1F5FE; /* Light blue for better contrast with the dark background */
 }
 
 /* Header */
 header {
-    background-color: rgba(30, 60, 114, 0.85);
-    color: #fff;
+    background-color: rgba(21, 101, 192, 0.85);
+    color: #E3F2FD; /* Soft white-blue */
     padding: 20px;
     text-align: center;
     border-bottom: 3px solid #4CAF50;
@@ -31,14 +31,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #FFFFFF; /* White links for contrast */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #4CAF50;
+    color: #4CAF50; /* Green hover effect to make the links stand out */
 }
 
 /* Main Content Styling */
@@ -50,6 +50,7 @@ main {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
+    color: #E1F5FE; /* Light blue for readability */
 }
 
 section {
@@ -77,8 +78,8 @@ h2 {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: rgba(30, 60, 114, 0.85);
-    color: white;
+    background-color: rgba(21, 101, 192, 0.85);
+    color: #E1F5FE; /* Light blue to maintain consistency */
     position: relative;
     bottom: 0;
     width: 100%;
@@ -87,7 +88,7 @@ footer {
 
 /* Links */
 a {
-    color: #4CAF50;
+    color: #4CAF50; /* Fortnite-themed green for emphasis */
     text-decoration: none;
     font-weight: bold;
     transition: text-shadow 0.3s ease;
