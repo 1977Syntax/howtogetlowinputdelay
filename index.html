@@ -3,110 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortnite Input Delay Reduction</title>
+    <title>Fortnite Optimization Tips</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .tip-box {
+            border: 2px solid #4a90e2;
+            padding: 15px;
+            margin: 10px 0;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tip-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(74, 144, 226, 0.8);
+        }
+        .top-right {
+            background-color: #2e2e2e;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .border {
+            border: 1px solid #4a90e2;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">Fortnite Input Delay Wiki</div>
-            <ul class="nav-links">
-                <li><a href="#facts">Facts</a></li>
-                <li><a href="#guides">Guides</a></li>
-                <li><a href="#hardware">Hardware</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#community">Community</a></li>
+        <h1>Fortnite Optimization Tips</h1>
+        <div class="top-right">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="https://example.com/resource1" target="_blank">Resource 1</a></li>
+                <li><a href="https://example.com/resource2" target="_blank">Resource 2</a></li>
+                <li><a href="https://example.com/resource3" target="_blank">Resource 3</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
-
-    <main>
-        <h1>Welcome to the Fortnite Input Delay Wiki</h1>
-        
-        <section id="facts" class="wiki-section">
-            <h2>Five Essential Facts About Input Delay</h2>
-            <div class="fact">
-                <h3>1. Definition vs. Input Lag</h3>
-                <p>Input delay refers to the time it takes for your actions to register in-game, whereas input lag refers to the delay between an input and its on-screen action.</p>
-            </div>
-            <div class="fact">
-                <h3>2. Impact on Gameplay</h3>
-                <p>Minimizing input delay improves reaction times and overall gameplay experience, allowing for more precise movements.</p>
-            </div>
-            <div class="fact">
-                <h3>3. Advantages of Minimizing Input Delay</h3>
-                <p>Statistics show that players with lower input delay have significantly better performance in competitive matches.</p>
-            </div>
-            <div class="fact">
-                <h3>4. Common Misconceptions</h3>
-                <p>Many believe input delay isn’t critical for casual gaming, but it can affect everyone, even in casual matches.</p>
-            </div>
-            <div class="fact">
-                <h3>5. Professional Examples</h3>
-                <p>Professional players often optimize their setups with specific hardware choices to ensure the lowest possible input delay.</p>
-            </div>
-        </section>
-
-        <section id="guides" class="wiki-section">
-            <h2>Step-by-Step Guides</h2>
-            <h3>1. Adjusting In-Game Settings</h3>
-            <h4>a. Sensitivity Settings</h4>
-            <p>Lower mouse sensitivity can lead to more precise aiming.</p>
-            <h4>How to Adjust:</h4>
-            <ol>
-                <li>Launch Fortnite and go to Settings.</li>
-                <li>Navigate to the Input tab.</li>
-                <li>Adjust the Mouse Sensitivity sliders.</li>
-                <li>Use a consistent DPI setting on your mouse (400-800 DPI).</li>
-            </ol>
-
-            <h4>b. Frame Rate Limit</h4>
-            <p>Set the frame rate limit to match your monitor’s refresh rate.</p>
-            <h4>How to Adjust:</h4>
-            <ol>
-                <li>In Settings, navigate to the Video tab.</li>
-                <li>Find the Frame Rate Limit option.</li>
-                <li>Set it to your monitor's refresh rate.</li>
-            </ol>
-
-            <h4>c. Resolution and Display Settings</h4>
-            <p>A lower resolution can increase FPS.</p>
-            <h4>How to Adjust:</h4>
-            <ol>
-                <li>In the Video tab, locate the Resolution dropdown.</li>
-                <li>Experiment with lower resolutions (e.g., 1600x900).</li>
-                <li>Ensure Fullscreen mode is selected.</li>
-            </ol>
-
-            <h4>d. Graphics Quality</h4>
-            <p>Reducing graphics quality can improve performance.</p>
-            <h4>How to Adjust:</h4>
-            <ol>
-                <li>Set Quality Presets to Low or Medium.</li>
-                <li>Customize individual settings: Textures (Medium or Low), Shadows (Off), Anti-Aliasing (Off), V-Sync (Off), Motion Blur (Off).</li>
-            </ol>
-        </section>
-
-        <section id="hardware" class="wiki-section">
-            <h2>Hardware Recommendations</h2>
-            <p>Consider monitors with high refresh rates and low response times, along with gaming peripherals that are optimized for speed.</p>
-        </section>
-
-        <section id="resources" class="wiki-section">
-            <h2>Additional Resources</h2>
-            <p>Links to articles, videos, and forums that provide further information on optimizing gameplay and reducing input delay.</p>
-        </section>
-
-        <section id="community" class="wiki-section">
-            <h2>Community Engagement</h2>
-            <p>Join the discussion, share your experiences, and get tips from fellow players!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Fortnite Input Delay Wiki</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="content">
+        <div class="tip-box border">
+            <h2>Use Ethernet Cable</h2>
+            <p>Using an Ethernet cable can significantly improve your connection stability and reduce lag, resulting in a smoother gaming experience.</p>
+        </div>
+        <div class="tip-box border">
+            <h2>Optimize Settings</h2>
+            <p>Adjust your graphics settings for better performance. Lower settings can lead to higher frame rates.</p>
+        </div>
+        <div class="tip-box border">
+            <h2>Close Background Applications</h2>
+            <p>Make sure to close any unnecessary applications running in the background to free up resources.</p>
+        </div>
+    </div>
 </body>
 </html>
