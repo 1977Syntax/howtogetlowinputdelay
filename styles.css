@@ -2,15 +2,18 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    background-image: url('fortnite-bg.jpg'); /* Replace with your Fortnite background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Change text color for contrast */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
     color: white;
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid #388E3C; /* Cool border for header */
 }
 
 nav ul {
@@ -33,15 +36,16 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for main content */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid #4CAF50; /* Cool border for main content */
 }
 
 section {
     margin-bottom: 30px;
     padding: 15px;
-    border: 2px solid #4CAF50;
+    border: 2px dashed #4CAF50; /* Dashed border for sections */
     border-radius: 8px;
     transition: transform 0.2s;
 }
@@ -57,11 +61,12 @@ h2 {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent footer */
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
+    border-top: 5px solid #388E3C; /* Cool border for footer */
 }
 
 a {
