@@ -1,98 +1,66 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8; /* Light background color */
-    color: #333;
-}
-
 header {
-    background-color: #007bff; /* Blue header */
-    color: white;
-    padding: 20px;
+    background-color: #0f3460;
+    padding: 10px 20px;
     text-align: center;
 }
 
-.container {
+h1 {
+    font-size: 2.5em;
+    color: #e94560;
+}
+
+nav ul {
     display: flex;
-    margin: 20px;
-}
-
-.sidebar {
-    width: 250px;
-    background-color: #ffffff; /* White background for sidebar */
-    border: 2px solid #007bff; /* Blue border */
-    padding: 15px;
-    margin-right: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar h2 {
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
+    justify-content: center;
     list-style-type: none;
+    padding: 0;
 }
 
-.sidebar ul li a {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #007bff; /* Blue link color */
-    transition: color 0.3s;
-}
-
-.sidebar ul li a:hover {
-    color: #0056b3; /* Darker blue on hover */
-}
-
-main {
-    flex: 1;
-    background-color: #ffffff; /* White background for main content */
-    border: 2px solid #007bff; /* Blue border */
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
 }
 
 section {
-    margin-bottom: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #16213e;
+    border-radius: 8px;
 }
 
 h2 {
-    border-bottom: 2px solid #007bff; /* Blue underline for section headers */
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    color: #e94560;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007bff; /* Blue footer */
-    color: white;
-    position: relative;
-    bottom: 0;
+    background-color: #0f3460;
+}
+
+textarea {
     width: 100%;
+    height: 100px;
+    margin-top: 10px;
 }
 
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Animation for the sidebar and main section */
-.sidebar, main {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.sidebar:hover, main:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+button {
+    background-color: #e94560;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
 }
