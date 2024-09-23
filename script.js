@@ -1,20 +1,22 @@
-// Smooth scrolling for navigation links
-const navLinks = document.querySelectorAll('.nav-links a');
+// Sticky Navbar Functionality
+window.onscroll = function() {
+    const navbar = document.querySelector('.navbar');
+    const sticky = navbar.offsetTop;
 
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
+    if (window.pageYOffset > sticky) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+};
+
+// Smooth Scrolling for Navigation Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const targetId = e.target.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
-        window.scrollTo({
-            top: targetSection.offsetTop - 20,
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
-});
-
-// Animate wiki sections on load
-document.querySelectorAll('.wiki-section').forEach((section, index) => {
-    section.style.animationDelay = `${index * 0.1}s`; // Stagger the animation
 });
