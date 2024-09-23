@@ -1,14 +1,8 @@
-// Smooth scrolling for navigation links
-document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('nav ul li a');
-    
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default link behavior
-            const targetId = link.getAttribute('href'); // Get target section's ID
-            const targetSection = document.querySelector(targetId); // Target section
-            
-            targetSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to target section
+// Optional JavaScript for interactivity (e.g., smooth scrolling, animations)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
     });
-});
