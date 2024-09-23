@@ -13,3 +13,8 @@ navLinks.forEach(link => {
         });
     });
 });
+
+// Animate wiki sections on load
+document.querySelectorAll('.wiki-section').forEach((section, index) => {
+    section.style.animationDelay = `${index * 0.1}s`; // Stagger the animation
+});
