@@ -60,11 +60,12 @@ section {
     border: 2px solid #007BFF; /* Blue border for sections */
     border-radius: 5px;
     background-color: #ffffff; /* White background for sections */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added animation */
 }
 
 section:hover {
     background-color: #E7F1FF; /* Light blue hover effect */
+    transform: scale(1.02); /* Slight scaling effect on hover */
 }
 
 h2 {
@@ -92,4 +93,22 @@ footer {
 
 footer a {
     color: #007BFF; /* Blue link color */
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources ul li {
+    margin: 10px 0;
+}
+
+.resources a {
+    text-decoration: none;
+    color: #007BFF; /* Blue link color */
+}
+
+.resources a:hover {
+    text-decoration: underline;
 }
