@@ -2,13 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/06/fortnite-landscape-battleground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 header {
-    background: #333;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -27,7 +31,7 @@ header p {
 section {
     padding: 20px;
     margin: 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Adding transparency to sections for readability */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -50,7 +54,7 @@ li {
 }
 
 footer {
-    background: #333;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     color: #fff;
     text-align: center;
     padding: 10px 0;
