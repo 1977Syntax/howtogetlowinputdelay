@@ -1,4 +1,4 @@
-// Example of a simple interactivity: Scroll to sections
+// Smooth scrolling for navigation links
 const navLinks = document.querySelectorAll('.nav-links a');
 
 navLinks.forEach(link => {
@@ -8,7 +8,7 @@ navLinks.forEach(link => {
         const targetSection = document.querySelector(targetId);
         
         window.scrollTo({
-            top: targetSection.offsetTop,
+            top: targetSection.offsetTop - 20,
             behavior: 'smooth'
         });
     });
