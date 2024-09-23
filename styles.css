@@ -1,23 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #3b3b3b;
-    padding: 20px;
+    background-color: #282c34;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
-nav {
-    margin-top: 10px;
-}
-
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -27,31 +27,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ffcc;
+    color: white;
     text-decoration: none;
 }
 
 section {
-    padding: 40px;
-    border: 1px solid #3b3b3b;
     margin: 20px;
-    background-color: #2b2b2b;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
 }
 
-h1, h2 {
-    color: #00ffcc;
+h2 {
+    color: #333;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #3b3b3b;
-}
-
-ul {
-    line-height: 1.6;
-}
-
-ul li {
-    margin: 10px 0;
+    padding: 10px 0;
+    background-color: #282c34;
+    color: white;
 }
