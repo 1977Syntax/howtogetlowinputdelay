@@ -1,21 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     line-height: 1.6;
-    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/06/fortnite-landscape-battleground.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: #f4f4f4; /* Light gray background */
 }
 
 header {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    background: #0073e6; /* Blue header */
     color: #fff;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
@@ -25,40 +21,64 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background: #e9ecef; /* Light gray sidebar */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #0073e6; /* Blue links */
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 3;
+    margin-left: 20px;
 }
 
 section {
+    background: #fff; /* White background for content */
     padding: 20px;
-    margin: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Adding transparency to sections for readability */
+    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1rem;
-}
-
-ol, ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
+    color: #0073e6; /* Blue section headings */
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    background: #0073e6; /* Blue footer */
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px 0;
+    margin-top: 20px;
 }
