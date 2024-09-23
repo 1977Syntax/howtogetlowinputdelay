@@ -1,115 +1,124 @@
-/* General Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #0d47a1, #1c54b2, #42a5f5);
+    line-height: 1.6;
+    background: #1e1e2f;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: url('fortnite-background.jpg'); /* Replace with a Fortnite-themed image */
     background-size: cover;
-    color: #000000; /* Black text for strong contrast */
-}
-
-/* Header */
-header {
-    background-color: rgba(21, 101, 192, 0.85);
-    color: #000000; /* Black header text */
-    padding: 20px;
+    padding: 100px 0;
     text-align: center;
-    border-bottom: 3px solid #000000; /* Black border */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8); /* Black shadow */
-}
-
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #000000; /* Black links for contrast */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #4CAF50; /* Green hover effect to stand out */
-}
-
-/* Main Content Styling */
-main {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    color: #000000; /* Black text for readability */
-}
-
-section {
-    margin-bottom: 30px;
-    padding: 15px;
-    border-radius: 12px;
-    border: 3px solid #000000; /* Black border for sections */
     position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Black shadow on hover */
-}
-
-/* Heading Styles */
-h2 {
-    color: #000000; /* Black headings */
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Black shadow for pop */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(21, 101, 192, 0.85);
-    color: #000000; /* Black footer text */
-    position: relative;
-    bottom: 0;
+.navbar {
+    position: absolute;
+    top: 20px;
     width: 100%;
-    border-top: 3px solid #000000; /* Black border */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Links */
-a {
-    color: #000000; /* Black links */
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
-    transition: text-shadow 0.3s ease;
+    font-weight: 600;
 }
 
-a:hover {
-    text-shadow: 0px 0px 5px #4CAF50; /* Green shadow on hover */
+.hero-content {
+    color: #ffffff;
+    margin-top: 100px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+.cta-button {
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
 
-    nav ul li {
-        margin: 10px 0;
-    }
+.cta-button:hover {
+    background: #ffd700;
+}
 
-    main {
-        padding: 15px;
-    }
+.key-facts, .tips-techniques, .resources {
+    padding: 60px 0;
+    background: #2a2a3b;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.facts-grid, .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.fact-item, .tip-item {
+    background: #3a3a4b;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.fact-item:hover, .tip-item:hover {
+    transform: translateY(-5px);
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin: 10px 0;
+}
+
+.resource-list a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.resource-list a:hover {
+    color: #ffd700;
+}
+
+footer {
+    background: #3a3a4b;
+    padding: 20px 0;
+    text-align: center;
 }
