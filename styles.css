@@ -1,122 +1,53 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
 }
 
 header {
-    background: #4CAF50;
-    padding: 10px 0;
-    animation: slideDown 0.5s ease-out;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
 }
 
-.logo {
-    font-size: 1.5rem;
-    color: #ffffff;
+.content {
+    margin-top: 20px;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.nav-links a:hover {
-    background: #45a049;
-}
-
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.wiki-section {
-    margin: 20px 0;
+.tip-box {
+    border: 2px solid #4a90e2;
     padding: 15px;
-    background: #ffffff;
-    border: 2px solid #4CAF50;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
+    margin: 10px 0;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.tip-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.8);
 }
 
-.fact {
-    margin-bottom: 15px;
-}
-
-h2 {
-    color: #4CAF50;
-    margin-bottom: 10px;
-}
-
-h3 {
-    color: #333;
-}
-
-h4 {
-    color: #555;
-}
-
-ol {
-    margin-left: 20px;
-}
-
-footer {
-    text-align: center;
+.top-right {
+    background-color: #2e2e2e;
     padding: 10px;
-    background: #4CAF50;
-    color: #ffffff;
+    border-radius: 5px;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.border {
+    border: 1px solid #4a90e2;
+    padding: 10px;
+    margin: 10px 0;
 }
