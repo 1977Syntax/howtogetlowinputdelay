@@ -1,69 +1,95 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #f5f5f5; /* Light text for readability */
-    line-height: 1.6;
-    background-color: #2c3e50; /* Dark blue background */
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-.sidebar {
-    background-color: #2980b9; /* Sidebar color */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.sidebar h2 {
-    margin-top: 0;
-    color: #f5f5f5; /* Light text for sidebar headings */
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding-left: 0;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #ffffff; /* White text for links */
     font-weight: bold;
 }
 
-.sidebar a:hover {
-    color: #ffdd57; /* Yellow on hover */
-}
-
-.content {
-    margin-left: 20px;
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section {
-    background-color: #34495e; /* Section background */
-    padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 2px solid #4CAF50;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s; /* Animation on hover */
+    transition: transform 0.2s;
 }
 
 section:hover {
-    transform: scale(1.02); /* Slight scaling effect */
+    transform: scale(1.02);
 }
 
 h2 {
-    color: #00bcd4; /* Cyan for section headings */
+    color: #4CAF50;
 }
 
 footer {
-    background-color: #34495e; /* Dark footer */
-    color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #388E3C;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
 }
