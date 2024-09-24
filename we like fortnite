@@ -1,0 +1,43 @@
+fortnite=fortnite=my fortnite"'f
+-- Place this script inside an NPC model
+
+local npc = script.Parent  -- Reference to the NPC
+
+local function onPlayerTouch(other)
+    local player = game.Players:GetPlayerFromCharacter(other.Parent)  -- Get the player who touched the NPC
+    if player then
+        player:SendNotification("Hello! Welcome to the Adventure Quest!")  -- Display a welcome message
+    end
+end
+
+npc.Touched:Connect(onPlayerTouch)  -- Connect the function to the Touched event
+-- Place this script inside a collectible item (e.g., a coin)
+
+local item = script.Parent  -- Reference to the collectible item
+
+local function onPlayerTouch(other)
+    local player = game.Players:GetPlayerFromCharacter(other.Parent)  -- Get the player who touched the item
+    if player then
+        item:Destroy()  -- Remove the item from the game
+        player:SendNotification("You collected a coin!")  -- Display a collection message
+        -- Add logic here to increase the player's score if needed
+    end
+end
+
+item.Touched:Connect(onPlayerTouch)  -- Connect the function to the Touched event-- Place this script inside an NPC model
+
+local npc = script.Parent  -- Reference to the NPC
+local questGiven = false  -- Flag to check if quest has been given
+
+local function onPlayerTouch(other)
+    local player = game.Players:GetPlayerFromCharacter(other.Parent)  -- Get the player who touched the NPC
+    if player and not questGiven then
+        questGiven = true  -- Set the flag to true
+        player:SendNotification("Quest: Find 3 hidden flowers!")  -- Give the quest
+        -- Logic to track the quest progress would go here
+    end
+end
+
+npc.Touched:Connect(onPlayerTouch)  -- Connect the function to the Touched event
+,forntie{fortnite}
+fortnite/roblox/fortniet;fortniet
